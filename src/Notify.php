@@ -7,6 +7,13 @@ use Illuminate\Contracts\Session\Session;
 class Notify
 {
     /**
+     * The session the notification is flashed to
+     *
+     * @var \Illuminate\Contracts\Session\Session
+     */
+    protected $session;
+
+    /**
      * Create a new notify instance
      *
      * @param Illuminate\Contracts\Session\Session $session

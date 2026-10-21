@@ -7,6 +7,10 @@ use Mach3Builders\UI\Toast;
 
 class ToastTest extends TestCase
 {
+    protected $session;
+
+    protected $toast;
+
     public function setUp(): void
     {
         $this->session = Mockery::spy('Illuminate\Session\Store');
