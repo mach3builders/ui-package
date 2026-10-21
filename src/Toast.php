@@ -7,6 +7,13 @@ use Illuminate\Contracts\Session\Session;
 class Toast
 {
     /**
+     * The session the toast is flashed to
+     *
+     * @var \Illuminate\Contracts\Session\Session
+     */
+    protected $session;
+
+    /**
      * Create a new toast instance
      *
      * @param Illuminate\Contracts\Session\Session $session

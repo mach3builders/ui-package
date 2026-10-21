@@ -19,6 +19,13 @@ class Alert
     ];
 
     /**
+     * The session the alert is flashed to
+     *
+     * @var \Illuminate\Contracts\Session\Session
+     */
+    protected $session;
+
+    /**
      * Create a new alert instance
      *
      * @param Illuminate\Contracts\Session\Session $session
